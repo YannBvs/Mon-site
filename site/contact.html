@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | B. Yann</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">B. Yann</a>
+
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À-propos </a>
+            <a href="#" class="active">Contact</a>
+            <a href="https://www.canva.com/design/DAF7WlCOnbg/NX2jEqXz_s6NnDDwMxrHMg/view?utm_content=DAF7WlCOnbg&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer">CV</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contactez-moi</h1>
+
+        <form action="contact.php" method="post" class="contact-form">
+            <label for="name">Nom Prénom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Sujet :</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 B. Yann. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

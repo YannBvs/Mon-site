@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Métadonnées de la page -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website HTML CSS | Codehal</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS principal -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Lien vers la bibliothèque d'icônes Boxicons -->
+
+    <style>
+        /* Styles CSS en ligne */
+        .home-image {
+            cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .rotate {
+            transform: rotateX(180deg) rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- En-tête de la page -->
+    <header class="header">
+        <a href="#" class="logo">B. Yann</a>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="about.html">À-propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.canva.com/design/DAF7WlCOnbg/NX2jEqXz_s6NnDDwMxrHMg/view?utm_content=DAF7WlCOnbg&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer">CV</a>
+        </nav>
+    </header>
+
+    <!-- Section principale de la page d'accueil -->
+    <section class="home">
+        <!-- Contenu de l'image d'accueil avec effet de rotation -->
+        <div class="home-image" onmouseenter="rotateImage(true)" onmouseleave="rotateImage(false)">
+            <img src="img.png" alt="">
+        </div>
+
+        <!-- Contenu texte de la page d'accueil -->
+        <div class="home-content">
+            <h1>Bonjour, je m'appelle Yann Boisvilliers</h1>
+            <h3>Bienvenue sur ma page</h3>
+            <p>Étudiant en Réseau Télécommunications en 1ère année </p>
+
+            <!-- Icône de lien vers LinkedIn -->
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/yann-boisvilliers-0361b02a4/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script JavaScript pour la rotation de l'image -->
+    <script>
+        // Fonction pour faire pivoter l'image
+        function rotateImage(rotate) {
+            var homeImage = document.querySelector('.home-image');
+            if (rotate) {
+                homeImage.classList.add('rotate');
+            } else {
+                homeImage.classList.remove('rotate');
+            }
+        }
+    </script>
+</body>
+
+</html>

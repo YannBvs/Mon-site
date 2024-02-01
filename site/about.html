@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | B. Yann</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">B. Yann</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#" class="active">À-propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.canva.com/design/DAF7WlCOnbg/NX2jEqXz_s6NnDDwMxrHMg/view?utm_content=DAF7WlCOnbg&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer">CV</a>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>À propos de moi</h1>
+
+        <div class="about-content">
+            <img src="img.JPG" alt="Yann Boisvilliers">
+            <p>À 18 ans, je suis Yann Boisvilliers, un habitant de La Réunion, plongé dans le vaste univers des réseaux et des télécommunications. Mon parcours éducatif a débuté avec un baccalauréat STI2D, avec une spécialisation en Systèmes d'Information et Numérique (SIN).
+
+                Depuis mon enfance, ma fascination pour les nouvelles technologies a été une constante. J'ai été émerveillé par leur évolution rapide et leur impact sur le monde qui m'entoure. Cette passion innée m'a conduit à entreprendre des études supérieures dans le domaine des réseaux et des télécommunications, explorant ainsi les fondements des communications modernes et les technologies qui relient notre planète.
+                
+                Au-delà de mes études, je suis déterminé à contribuer activement à façonner l'avenir numérique. Ma curiosité insatiable et mon engagement envers l'innovation font de moi un étudiant dynamique, prêt à relever les défis complexes du monde connecté d'aujourd'hui.
+                
+                Suivez-moi dans mon parcours, découvrez mes réalisations et explorez avec moi les opportunités infinies que la convergence de la technologie et de l'avenir offre à ceux qui osent rêver et innover.</p>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/yann-boisvilliers-0361b02a4/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <p>&copy; 2024 B. Yann. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // JavaScript to show/hide footer based on window scroll
+        window.addEventListener("scroll", function () {
+            var footer = document.getElementById("footer");
+            var distanceToBottom = document.body.clientHeight - (window.pageYOffset + window.innerHeight);
+
+            // Show footer when near the bottom of the page
+            if (distanceToBottom < 50) {
+                footer.style.bottom = "0";
+            } else {
+                footer.style.bottom = "-" + footer.clientHeight + "px";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
